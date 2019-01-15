@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:300,400,700|Oswald:300,400|PT+Sans:400,700&subset=cyrillic');
+:root {
+    --colorBckg: #e8e8e8;
+    --colorCoffe: #664735;
+    --colorMenu: #e8e8e8;
+}
+
+.position {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@width: 1280px;
+@height: 2500px;
+body {
+    width: @width;
+    height: @height;
+    .position;
+    header {
+        width: @width;
+        height: auto;
+        background-color: var(--colorMenu);
+        position: relative;
+        .preheader {
+            width: @width;
+            height: 10px;
+            background: var(--colorCoffe);
+        }
+        .menu {
+            .logo {
+                margin: 41px 0 0 115px;
+            }
+            .logo,
+            .logo2 {
+                display: inline-block;
+            }
+            .logo {
+                a,
+                .mark1,
+                .mark2 {
+                    display: inline-block;
+                    font-family: 'PT+Sans';
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 1.33px;
+                    line-height: 19.01px;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+                .mark1 {
+                    color: #9d9c9d;
+                }
+                .mark2 {
+                    color: #664735;
+                    font-size: 14px;
+                    font-weight: 900;
+                }
+            }
+            .logo2 {
+                float: right;
+                position: absolute;
+                right: 78px;
+                top: 40px;
+                border-collapse: collapse;
+                background-color: #f4f4f4;
+                border-radius: 40px 40px 40px 40px;
+                box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
+                td {
+                    height: 40px;
+                    list-style-type: none;
+                    font-family: 'PT+Sans';
+                    color: #9d9c9c;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.95px;
+                    line-height: 19.01px;
+                    text-align: center;
+                    vertical-align: middle;
+                    border: 1px solid #e6e6e6;
+                    a {
+                        padding: 20px;
+                        text-decoration: none;
+                        color: #9d9c9c;
+                        img {
+                            padding: 5px 5px 0 0;
+                        }
+                    }
+                    a:hover {
+                        filter: drop-shadow(0 0 5px #664735);
+                    }
+                }
+                td:first-child {
+                    border-radius: 40px 0 0 40px;
+                }
+                table {}
+            }
+            .content {
+                display: table;
+                height: 326px;
+                .leftArrow,
+                .rightArrow {
+                    width: @width/6;
+                    height: 326px;
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+                .rightArrow a:hover {
+                    filter: hue-rotate(-105deg) saturate(200%);
+                }
+                .leftArrow a:hover {
+                    filter: hue-rotate(-105deg) saturate(200%);
+                }
+                .contentUnited {
+                    width: @width*4/6;
+                    display: table;
+                    .cUtext,
+                    .cUpic {
+                        display: table-cell;
+                        width: @width/3;
+                        height: 290px;
+                    }
+                    .cUnav {
+                        display: table-row;
+                        width: @width*4/6;
+                        height: 36px;
+                        vertical-align: middle;
+                        position: relative;
+                        .circleUnited {
+                            position: absolute;
+                            left: 50%;
+                            .circle {
+                                display: inline-block;
+                                width: 9px;
+                                height: 9px;
+                                border-radius: 9px 9px 9px 9px;
+                                background-color: #664735;
+                                margin-left: 10px;
+                            }
+                            .circle:hover {
+                                background-color: #cfcfcf;
+                            }
+                        }
+                    }
+                    .cUpic {
+                        background-image: url(../images/slider-coffe-image.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    .cUtext {
+                        h2 {
+                            padding-top: 50px;
+                            /* Style for "WELCOME TO" */
+                            height: 15px;
+                            color: #9d9c9d;
+                            font-family: 'PT+Sans';
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 21.08px;
+                            text-transform: uppercase;
+                            /* Text style for "W, ELCOME" */
+                            letter-spacing: 1.52px;
+                        }
+                        p {
+                            font-family: 'PT+Sans';
+                            color: #9d9c9d;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 21.08px;
+                            /* Text style for "Lorem Ipsu" */
+                            letter-spacing: 1.14px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #6f6d6d;
+                            font-family: 'PT+Sans';
+                            font-style: italic;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 21.08px;
+                            /* Text style for "Read More" */
+                            letter-spacing: 1.14px;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .leftArrow,
+                .rightArrow,
+                .contentUnited {
+                    display: table-cell;
+                }
+            }
+        }
+    }
+    main {
+        width: @width;
+        height: 946px+411px+399px;
+        .conditions {
+            height: 399px;
+            display: table;
+            .leftCond,
+            .midleCond,
+            .rightCond {
+                width: @width/3;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                color: #9d9c9d;
+                font-family: 'PT+Sans';
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19.01px;
+                text-transform: uppercase;
+                /* Text style for "YOUR CHOIC" */
+                letter-spacing: 1.52px;
+            }
+            .leftCond,
+            .rightCond {}
+        }
+        .whoWeAre {
+            height: 411px;
+            width: @width;
+            .wwa1,
+            .wwa2 {
+                display: inline-block;
+                .position;
+                height: 411px;
+                width: @width/2;
+            }
+            .wwa1 {
+                background-color: rgba(102, 71, 53, 0.79);
+                float: left;
+            }
+            .wwa2 {
+                background-color: var(--colorCoffe);
+                float: right;
+            }
+        }
+        .gallery {
+            height: 946px;
+            position: relative;
+            .pics {
+                height: 506px;
+                width: 1060px;
+                background-color: #f3b9b9;
+                position: absolute;
+                top: 293px;
+                left: 108px;
+            }
+        }
+    }
+    footer {
+        width: @width;
+        height: 227px;
+        background-image: url("../images/footer-bg.png");
+        background-repeat: no-repeat;
+    }
+}
